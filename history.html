@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="directions.js?rev=2"></script>
+<script> $(document).ready(function(){
+        $("#history").hide();
+	$("#expanded-table").hide();}); </script>
+    <title>Joe Janaskie's Final Project</title>
+  </head>
+  <body>
+<div class="container pt-5">
+    <div class = "row">
+        <div id = "navigation">
+            <div class = "bar">
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="directions.html">Directions</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="history.html">History</a>
+                    </li>
+                  </ul>
+             </div>
+        </div>
+
+	<div class="input-group" id ="srch">
+	<div class="col">
+	<input type="text" class="form-control" id="searchText" placeholder="Search (YYYY-MM-DD)">	
+	<input type="text" class="form-control" id="limitText" placeholder="Limit Queries #">
+	</div>
+	<div class="col">
+	<button type="button" onclick="search()" class="btn btn-primary">Search</button>
+	</div>    
+	</div>
+
+	 <div class="col-lg-6 box" id="history"><h2><u>Past Search Queries</u></h2>
+          <table class='table loadTable'>
+     	       <thead><tr><th>Locations:</th><th>Duration:</th><th>Number of Maneuvers:</th><th>Date:</th><th></th></tr></thead>
+            <tbody id='historyBody'>
+            </tbody>
+          </table>
+                <span id="elevate"></span>
+        </div>
+
+      	<div class="col-lg-6 box" id="expanded-table"><h2><span id="expanded-header"></span></h2>
+          <table class='table loadTable' id ="expanded-results-table">
+            <thead><tr><th>Directions</th><th>Time</th><th>Distance</th><th>Image</th></tr></thead>
+            <tbody id='exp-rows'>
+            </tbody>
+          </table>
+                <span id="elevate-expanded"></span>
+        </div>
+
+</div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>

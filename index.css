@@ -1,0 +1,76 @@
+.bar ul{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    list-style-type: none;
+    padding: 30px;
+}
+
+.bar ul a:hover {
+    border-bottom: 1px solid red;
+    color: salmon;
+}
+
+.bar ul a {
+    text-decoration: none;
+    font-size: 25px;
+    color: darkred;
+}
+
+.bar {
+    border-style: solid;
+    border-radius: 7%;
+    border-color:crimson;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0px;
+}
+
+#details {
+    text-align: center;
+    padding: 30px;
+}
+
+#miami {
+    width: 40%;
+}
+
+#directions {
+    margin-top: 10px;
+    border-style: solid;
+    border-color: black;
+    padding: 3%;
+    background-color:ghostwhite;
+    width: 95%;
+}
+
+.row {
+    margin: 2%;
+}
+
+
+#results {
+margin: 1%;
+}
+
+#elevate {
+display: flex;
+justify-content: center;
+}
+
+#srch {
+width: 100%;
+margin: auto;
+padding: 3%;
+}
+
+#expanded-table {
+border-left-style: solid;
+border-left-color: crimson;
+position: relative;
+}
+
+
